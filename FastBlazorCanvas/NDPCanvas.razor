@@ -1,0 +1,15 @@
+﻿<canvas @ref=canvasRef width="@Width" height="@Height">
+    @CanvasNotSupportedContent
+</canvas>
+
+@code {
+    // Class and style can be configured by using a parent div
+
+    [Parameter]
+    public int Width { get; set; }
+    [Parameter]
+    public int Height { get; set; }
+
+    [Parameter]
+    public RenderFragment? CanvasNotSupportedContent { get; set; }
+}
